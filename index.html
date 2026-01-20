@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--OSWALD FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    
+    <!--
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        }
+  -->
+    
+    
+    
+    <!--END-->
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="loginlabel">Log In</h1>
+
+    </header>
+    <main>
+        <form action="#" method="post" class="loginform">
+            <label for="Username" class="dir">Username</label>
+            <input type="text"
+            type="text"
+            id="Username"
+            name="Username"
+            placeholder="Enter Your Username"
+            required
+            autocomplete="off"   
+            class="inputkeys"  
+            spellcheck="false">
+            
+            
+            <label for="Password" class="dir">Password</label>
+            <div class="passdiv">
+                <input type="password"
+                id="password"
+                name="Password"
+                placeholder="Enter Your Password"
+                required
+                autocomplete="off"  
+                spellcheck="false" 
+                class="inputkeys">
+                <button type="button" onclick="togglePassword()" class="showbutton">
+                    SHOW
+                </button>
+                <a href="">
+                    <button class="loginbutton">
+                        Log In
+                    </button>
+                </a>
+
+            </div>
+
+        </form>
+        
+
+    </main>
+    <footer class="footer">
+        <div class="footerdiv">
+            <a href="register.html" class="registernow">Register Now</a>
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

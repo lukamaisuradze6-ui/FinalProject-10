@@ -1,0 +1,76 @@
+html {
+  background-image: url(pics/backgr.avif);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .headerdiv {
+  height: 100px;
+}
+.header .headerdiv .registerP {
+  color: purple;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .maindiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .maindiv .label {
+  font-family: "Oswald", sans-serif;
+  color: purple;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.main .maindiv .Shareddiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .maindiv .Shareddiv .Sharedclass {
+  border: solid purple 2px;
+  height: 60px;
+  width: 250px;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: purple;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.main .maindiv .Shareddiv .Sharedclass:focus::-moz-placeholder {
+  opacity: 0;
+}
+.main .maindiv .Shareddiv .Sharedclass:focus::placeholder {
+  opacity: 0;
+}
+.main .maindiv .Shareddiv .Sharedclass::-moz-placeholder {
+  color: purple;
+}
+.main .maindiv .Shareddiv .Sharedclass::placeholder {
+  color: purple;
+}
+.main .maindiv .Shareddiv .href .Buttons {
+  height: 60px;
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: solid purple 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: purple;
+  font-family: "Oswald", sans-serif;
+}/*# sourceMappingURL=style2.css.map */
