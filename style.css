@@ -1,5 +1,7 @@
 body {
   background-image: url("pics/backgr.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body .header {
   display: flex;

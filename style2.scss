@@ -1,22 +1,41 @@
 html{
     background-image: url(pics/backgr.avif);
+    background-repeat: no-repeat;
+        background-size: cover;
 }
 .header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+    
+    
     
     .headerdiv{
         height: 100px;
+        position: absolute;
         .registerP{
             color: purple;
             font-family: "Oswald", sans-serif;
             font-size: 70px;
-            font-weight: bold;
+            font-weight: bold;  
             margin: 0px;
 
         }
     }
+
+
+    .linkedbutton{
+        margin-left: 90%;
+        .maintravel{
+                height:50px;
+                width:70px;
+                
+                
+                
+            }
+    }
+    
 }
 
 

@@ -1,14 +1,18 @@
 html {
   background-image: url(pics/backgr.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .header .headerdiv {
   height: 100px;
+  position: absolute;
 }
 .header .headerdiv .registerP {
   color: purple;
@@ -16,6 +20,13 @@ html {
   font-size: 70px;
   font-weight: bold;
   margin: 0px;
+}
+.header .linkedbutton {
+  margin-left: 90%;
+}
+.header .linkedbutton .maintravel {
+  height: 50px;
+  width: 70px;
 }
 
 .main {
