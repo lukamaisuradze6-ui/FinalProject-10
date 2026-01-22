@@ -85,7 +85,7 @@
 
             <label for="Password" class="label">Password</label>
             <div class="Shareddiv">
-                <input type="text"
+                <input type="password"
                 spellcheck="false"
                 id="Password"
                 name="Password"
@@ -102,10 +102,10 @@
 
             <label for="Password" class="label">Repeat Password</label>
             <div class="Shareddiv">
-                <input type="text"
+                <input type="password"
                 spellcheck="false"
                 id="password"
-                name="Password"
+                name="Confirm_Password"
                 placeholder="Repeat your password"
                 required
                 autocomplete="off"
@@ -117,13 +117,16 @@
             </div>
 
             <div class="Shareddiv">
-                <a href="" class="href">
+                <form action="/register" method="POST" class="href">
 
                 
-                    <button class="Buttons">
+
+                
+                    <button class="Buttons" type="submit">
                         Register
                     </button>
-                </a>
+                    
+                </form>
 
             </div>
 
