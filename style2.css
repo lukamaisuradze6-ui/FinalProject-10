@@ -40,6 +40,16 @@ html {
   justify-content: center;
   flex-direction: column;
 }
+.main .maindiv .Buttons {
+  height: 60px;
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: solid purple 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: purple;
+  font-family: "Oswald", sans-serif;
+}
 .main .maindiv .label {
   font-family: "Oswald", sans-serif;
   color: purple;
@@ -74,14 +84,4 @@ html {
 }
 .main .maindiv .Shareddiv .Sharedclass::placeholder {
   color: purple;
-}
-.main .maindiv .Shareddiv .href .Buttons {
-  height: 60px;
-  width: 120px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: solid purple 2px;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: purple;
-  font-family: "Oswald", sans-serif;
 }/*# sourceMappingURL=style2.css.map */
