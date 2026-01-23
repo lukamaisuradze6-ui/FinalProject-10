@@ -1,23 +1,21 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from auth import create_users_table, register_user, login_user
 
-# ------------------ FLASK SETUP ------------------ #
-# template_folder="." allows Flask to access index.html in root
-# static_folder="." allows CSS/images in style/ and pics/
+
 app = Flask(
     __name__,
-    template_folder="templates",  # HTML files here
-    static_folder="static"        # CSS/images served from here
+    template_folder="templates",  
+    static_folder="static"        
 )
 
 
 app.secret_key = "ML1234"
 
-# Create database table if it doesn't exist
+
 create_users_table()
 
 
-# ------------------ ROUTES ------------------ #
+
 
 @app.route("/", methods=["GET", "POST"])
 def login():
@@ -31,7 +29,7 @@ def login():
         else:
             flash("Invalid user details")
 
-    return render_template("index.html")  # login page is index.html in root
+    return render_template("index.html")  
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -43,17 +41,17 @@ def register():
         password = request.form.get("Password")
         confirm_password = request.form.get("Confirm_Password")
 
-        # Check required fields
+        
         if not first_last or not personal_number or not password:
             flash("All fields are required")
             return render_template("pages/register.html")
 
-        # Check passwords match
+        
         if password != confirm_password:
             flash("Passwords do not match")
             return render_template("pages/register.html")
 
-        # Register user
+       
         if register_user(first_last, personal_number, password):
             flash("Registration successful! Please log in now.")
             return redirect(url_for("login"))
