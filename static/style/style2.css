@@ -2,19 +2,7 @@ html {
   background-image: url("../pics/pexels-matheusnatan-3297593.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-    
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-body{
-    animation: fadeIn 0.5s forwards;
-
-}
-
 
 .header {
   display: flex;
