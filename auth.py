@@ -1,9 +1,8 @@
 import sqlite3
 import bcrypt
-import os
 
 DB_NAME = "student_portal.db"
-print("DB PATH:", os.path.abspath(DB_NAME))
+
 
 def create_users_table():
     conn = sqlite3.connect(DB_NAME)
@@ -19,8 +18,12 @@ def create_users_table():
     conn.commit()
     conn.close()
 
+
 def register_user(first_last, personal_number, password):
-    password_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+    password_hash = bcrypt.hashpw(
+        password.encode(),
+        bcrypt.gensalt()
+    ).decode()
 
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
@@ -37,6 +40,7 @@ def register_user(first_last, personal_number, password):
     finally:
         conn.close()
 
+
 def login_user(personal_number, password):
     conn = sqlite3.connect(DB_NAME)
     cursor = conn.cursor()
@@ -45,10 +49,10 @@ def login_user(personal_number, password):
         "SELECT password_hash FROM users WHERE personal_number = ?",
         (personal_number,)
     )
-    result = cursor.fetchone()
+    row = cursor.fetchone()
     conn.close()
 
-    if not result:
+    if not row:
         return False
 
-    return bcrypt.checkpw(password.encode(), result[0].encode())
+    return bcrypt.checkpw(password.encode(), row[0].encode())
