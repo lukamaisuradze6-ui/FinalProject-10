@@ -1,3 +1,9 @@
+html {
+  background-image: url("../pics/pexels-matheusnatan-3297593.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .mainheader {
   display: flex;
   flex-direction: row;
@@ -22,6 +28,7 @@
   height: 200px;
   border: solid black;
   margin-top: 10px;
+  background-color: purple;
 }
 .mainheader .stuffdiv .mainstuff {
   height: 98%;
