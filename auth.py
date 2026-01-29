@@ -2,6 +2,8 @@ import sqlite3
 import bcrypt
 import os
 
+
+
 DB_NAME = "student_portal.db"
 print("PATH OF DATABASE:", os.path.abspath(DB_NAME))
 

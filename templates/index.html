@@ -54,11 +54,11 @@
     </header>
     <main>
         <form action="#" method="post" class="loginform" >
-            <label for="Username" class="dir">Username</label>
+            <label for="Username" class="dir">Personal Number</label>
             <input type="text"
             id="Username"
             name="Username"
-            placeholder="Enter Your Username"
+            placeholder="Enter Your prsonal number"
             required
             autocomplete="off"   
             class="inputkeys"  
@@ -78,11 +78,11 @@
                 <button type="button" onclick="togglePassword()" class="showbutton">
                     SHOW
                 </button>
-                <a href="">
-                    <button class="loginbutton">
+                
+                    <button type="submit" class="loginbutton">
                         Log In
                     </button>
-                </a>
+                
 
             </div>
 
@@ -92,7 +92,7 @@
     </main>
     <footer class="footer">
         <div class="footerdiv">
-            <a href="pages/register.html" class="registernow">Register Now</a>
+            <a href="{{ url_for('register') }}"  class="registernow">Register Now</a>
         </div>
 
     </footer>
