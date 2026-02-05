@@ -1,5 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from auth import create_users_table, register_user, login_user
+from auth import (
+   create_users_table,
+   create_courses_table,
+   create_enrollments_table,
+   enroll_course,
+   register_user,
+   login_user,
+   
+)
 
 app = Flask(
     __name__,
@@ -11,6 +19,8 @@ app.secret_key = "ML1234"
 
 # Create DB table if not exists
 create_users_table()
+create_courses_table()
+create_enrollments_table()
 
 
 @app.route("/", methods=["GET", "POST"])
