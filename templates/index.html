@@ -24,17 +24,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     <!--END-->
 
 
@@ -43,14 +32,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
-   <link rel="stylesheet" href="../style/style.css">
+   <link rel="stylesheet" href="../static/style/style.css">
 
 
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <h1 class="loginlabel">Log In</h1>
+        <h1 class="loginlabel">MIH UNI</h1>
 
     </header>
     <main>
@@ -76,9 +65,7 @@
                 autocomplete="off"  
                 spellcheck="false" 
                 class="inputkeys">
-                <button type="button" onclick="togglePassword()" class="showbutton">
-                    SHOW
-                </button>
+                
                 
                     <button type="submit" class="loginbutton">
                         Log In
@@ -93,7 +80,7 @@
     </main>
     <footer class="footer">
         <div class="footerdiv">
-            <a href="{{ url_for('register') }}"  class="registernow">Register Now</a>
+            <a href="{{ url_for('register') }}" class="registernow">Register Now</a>
         </div>
 
     </footer>

@@ -1,7 +1,8 @@
 html{
-    background-image: url("../pics/weed.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url("../pics/weed.webp");
     background-repeat: no-repeat;
-        background-size: cover;
+    background-size: cover;
 }
 .header{
     display: flex;
@@ -10,13 +11,12 @@ html{
     margin-bottom: 30px;
     
     
-    
     .headerdiv{
         height: 100px;
         position: absolute;
         margin-top: 20px;
         .registerP{
-            color: purple;
+            color: rgb(255, 255, 255);
             font-family: "Oswald", sans-serif;
             font-size: 70px;
             font-weight: bold;  
@@ -66,7 +66,7 @@ html{
             align-items: center ;
              .label{
                             font-family: "Oswald", sans-serif;
-                            color: purple;
+                            color: rgb(121, 121, 121);
                             font-size: 30px;
                             padding-top: 10px;
                             margin-bottom: 10px;
@@ -96,10 +96,16 @@ html{
                                     width: 250px;
                                     cursor: pointer;
                                     font-family: "Oswald", sans-serif;
-                                    text-align: center;
-                                    color: purple;
+                                   color: white;
+                                    border: 2px solid #8707ff;
                                     border-radius: 10px;
-                                    background-color: rgba(255, 255, 255, 0.5);
+                                    padding: 10px 25px;
+                                    background: transparent;
+                                    max-width: 190px;
+
+                                    &:active {
+                                    box-shadow: 2px 2px 15px #8707ff inset;
+                                    }
 
 
                                     &:focus::placeholder{
@@ -107,7 +113,7 @@ html{
                                     }
 
                                     &::placeholder{
-                                        color: purple;
+                                        color: rgb(121, 121, 121);
                                     }
 
 
@@ -128,13 +134,15 @@ html{
                         .Buttons{
                                     height: 60px;
                                     width:120px;
-                                    margin-top: 10px;
+                                    color: white;
+                                    border: 2px solid #8707ff;
                                     border-radius: 10px;
-                                    border: solid purple 2px;
-                                    background-color: rgba(255, 255, 255, 0.5);
-                                    color: purple;
+                                    padding: 10px 25px;
+                                    background: transparent;
+                                    max-width: 190px;
                                     font-family: "Oswald", sans-serif;
-
+                                    cursor: pointer;
+                                    margin-top: 20px;
 
                                     
                                 }
