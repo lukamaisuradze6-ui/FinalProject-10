@@ -2,104 +2,261 @@ html{
     background-image: url("../pics/pexels-matheusnatan-3297593.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+   
 }
 
 
 
+.body{
+    
 
-.mainheader{
+    .mainheader{
 
-    display: flex;
-    flex-direction: row;
-    .morediv{
-        height:100vh;
-        width:200px;
-        border: solid black;
-    }
-    .stuffdiv{
-        width: 100vw;
-        height: 100vhpx;
-        border:solid black;
-        margin-left: 10px;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-        .headofpage{
-            width: 98%;
-            height:200px;
+        flex-direction: row;
+        z-index: 50;
+        .morediv{
+            height:90vh;
+            width:200px;
             border: solid black;
-            margin-top: 10px;
-            background-color: purple;
-        }
-
-        .mainstuff{
-            
-            height: 98%;
-            width: 98%;
-            border: solid black;
-            margin-top:10px;
-            margin-bottom: 10px;
             display: flex;
-            flex-direction: row;
-            
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10px;
+            .subjects{
+                width: 96%;
+                height: 80px;
+                cursor: pointer;
+                border: solid purple ;
+                border-radius: 10px;
+                background-color: transparent;
+            }
+        }
+        .stuffdiv{
+            width: 100vw;
+            height: 100vhpx;
+            border:solid black;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
-            .classesdiv{
-                width: 40%;
-                height: 95%;
+            .headofpage{
+                width: 98%;
+                height:200px;
                 border: solid black;
                 margin-top: 10px;
+                background-color: rgb(0, 213, 255);
+            }
+
+            .mainstuff{
+                
+                height: 98%;
+                width: 98%;
+                border: solid black;
+                margin-top:10px;
                 margin-bottom: 10px;
-                margin-left: 20px;
                 display: flex;
-                flex-direction: column;
-              
-                align-items: center;
-                justify-content: space-between;
-                
+                flex-direction: row;
                 
 
-
-
-                .calendar{
-                    width: 96%;
-                    height: 100px;
+                .classesdiv{
+                    width: 40%;
+                    height: 95%;
                     border: solid black;
                     margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                
+                    align-items: center;
+                    justify-content: space-between;
+                    
                     
 
 
+
+                    .calendar{
+                        width: 96%;
+                        height: 100px;
+                        border: solid black;
+                        margin-top: 10px;
+                        
+
+
+                    }
+
+                    .class{
+                        height:100px;
+                        width: 96%;
+                        border:solid black;
+                        margin-bottom: 10px;
+
+                    }
+
+
+
                 }
-
-                .class{
-                    height:100px;
-                    width: 96%;
-                    border:solid black;
-                    margin-bottom: 10px;
-
-                }
-
-
-
-            }
-            .nextday{
-                height: 100px;
-                width:200px;
-                border:solid black;
-                margin-top: 10px;
-                margin-left: 10px;
-                
-
-                .nextdayB{
+                .nextday{
                     height: 100px;
-                    width: 200px;
-                    cursor: pointer;
-                }
+                    width:200px;
+                    border:solid black;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    
 
+                    .nextdayB{
+                        height: 100px;
+                        width: 200px;
+                        cursor: pointer;
+                    }
+
+                }
             }
+
         }
 
     }
+    
+        .popup{
+            display: flex;
+            width: 69vw;
+            height: 80vh;
+           
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            border-radius: 10px;
+            border: purple solid;
+            flex-direction: column;
+
+
+
+                .popup_header{
+                    width: 100%;
+                    height: 70px;
+                    border: black purple 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .subname{
+                        font-family: "Oswald", sans-serif;
+                        color: purple;
+                        font-size: 25px;
+                    }
+                }
+                .popup_body{
+                    height: 76%;
+                    width: 100%;
+                    
+                    display: flex;
+                    flex-direction: row;
+                    
+
+
+                    .choices{
+                        width: 80%;
+                        height: 100%;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                       
+                        .choice{
+                            width: 96%;
+                            height: 30%;
+                            border: solid black;
+                            cursor: pointer;
+                            background-color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            border: solid purple 2px;
+                            border-radius: 10px;
+                             .titleC{
+                                font-family: "Oswald", sans-serif;
+                                font-size: 25px;
+                                color: purple;
+                             }
+                        }
+                    }
+                    .sureornah{
+                        width: 20%;
+                        height: 100%;
+                        
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        
+                        
+                        .fr{
+                            font-family: "Oswald", sans-serif;
+                            
+                            font-size: 20px;
+                            color: purple;
+                    
+
+                            
+
+                        }
+                        .yup{
+                            height: 70px;
+                            width: 130px;
+                            border: solid purple;
+                            border-radius: 10px;
+                            font-family: "Oswald", sans-serif;
+                            color: purple;
+                            font-size: 20px;
+                            cursor: pointer;
+                            
+                            
+
+                        }
+                        .hellno{
+                            height: 70px;
+                            width: 130px;
+                            border: solid purple;
+                            border-radius: 10px;
+                            font-family: "Oswald", sans-serif;
+                            color: purple;
+                            font-size: 20px;
+                            cursor: pointer;
+                            
+
+                        }
+
+
+                    }
+
+                }
+                .popup_footer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 60px;
+                    width: 100%;
+                    .close{
+                        height: 50px;
+                        width: 110px;
+                      
+                        border-radius: 10px;
+                        cursor: pointer;
+                        color: purple;
+                        font-family: "Oswald", sans-serif;
+                        font-size: 20px;
+
+                    }
+
+                }
+        }
+    
 
 }

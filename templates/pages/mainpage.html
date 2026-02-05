@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style/style3.css') }}">
-
+    <link rel="stylesheet" href="../../static/style/style3.css">
+    <script src="../../script.js" defer></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     <title>Document</title>
-</head>
-<body>
-    <header class="mainheader">
-            <div class="morediv">
 
+
+
+    <!--OSWALD FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    
+    <!--
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        }
+  -->
+
+
+
+
+
+
+
+</head>
+<body class="body">
+    <div class="mainheader">
+            <div class="morediv">
+                <button class="subjects" id="subjects">subjects</button>
                 </div>
 
 
@@ -18,11 +42,15 @@
 
                         <div class="headofpage">
 
-                        </div>
-                        <!-- -->
+                    </div>
+                    <!---->
+                        
 
 
-                        <!--    -->
+
+
+
+
                         <div class="mainstuff">
 
                             <div class="classesdiv">
@@ -41,8 +69,7 @@
 
 
 
-                                <div class="class">
-                                </div>
+                                
 
                             </div>
 
@@ -67,7 +94,60 @@
 
 
             </div>
-    </header>
+        </div>
+
+                                
+                                    <div class="popup" id="popupp">
+                                        <header class="popup_header">
+                                            <h1 class="subname">SUBJECTS LIBRARY</h1>
+
+                                        </header>
+
+
+
+
+                                        <div class="popup_body">
+                                            <div class="choices">
+                                                <div class="choice" id="choice">
+                                                    <h1 class="titleC">How To Smoke A Cigarette</h1>
+                                                    <h1 class="titleC">Price:Free</h1>
+                                                </div>
+                                                <div class="choice" id="choice2">
+                                                    <h1 class="titleC">How To Steal A Car</h1>
+                                                    <h1 class="titleC">Price:Free</h1>
+                                                </div>
+                                                <div class="choice" id="choice3">
+                                                    <h1 class="titleC">How To Hide Illegal Stuff</h1>
+                                                    <h1 class="titleC">Price:Free</h1>
+                                                </div>
+                                                
+                                            </div>
+
+
+
+                                            <div class="sureornah">
+                                                <h1 class="fr" id="fr">U for real?</h1>
+                                                <button class="yup" id="YUP">YUP</button>
+                                                <button class="hellno" id="HELLNAH">HELL NAH!</button>
+
+                                            </div>
+                                            
+                                        </div>
+
+
+
+
+                                        <div class="popup_footer">
+                                            <button class="close" id="close">
+                                                close
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                
+
+
+    
     
 </body>
 </html>
