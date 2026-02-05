@@ -115,13 +115,14 @@ html {
   color: purple;
   font-size: 25px;
 }
-.body .popup .popup_body {
+.body .popup .popup_body .foorm {
   height: 76%;
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.body .popup .popup_body .choices {
+.body .popup .popup_body .foorm .choices {
   width: 80%;
   height: 100%;
   display: flex;
@@ -129,7 +130,7 @@ html {
   justify-content: space-around;
   align-items: center;
 }
-.body .popup .popup_body .choices .choice {
+.body .popup .popup_body .foorm .choices .choice {
   width: 96%;
   height: 30%;
   border: solid black;
@@ -141,12 +142,12 @@ html {
   border: solid purple 2px;
   border-radius: 10px;
 }
-.body .popup .popup_body .choices .choice .titleC {
+.body .popup .popup_body .foorm .choices .choice .titleC {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   color: purple;
 }
-.body .popup .popup_body .sureornah {
+.body .popup .popup_body .foorm .sureornah {
   width: 20%;
   height: 100%;
   display: flex;
@@ -154,12 +155,12 @@ html {
   align-items: center;
   flex-direction: column;
 }
-.body .popup .popup_body .sureornah .fr {
+.body .popup .popup_body .foorm .sureornah .fr {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   color: purple;
 }
-.body .popup .popup_body .sureornah .yup {
+.body .popup .popup_body .foorm .sureornah .yup {
   height: 70px;
   width: 130px;
   border: solid purple;
@@ -169,7 +170,7 @@ html {
   font-size: 20px;
   cursor: pointer;
 }
-.body .popup .popup_body .sureornah .hellno {
+.body .popup .popup_body .foorm .sureornah .hellno {
   height: 70px;
   width: 130px;
   border: solid purple;

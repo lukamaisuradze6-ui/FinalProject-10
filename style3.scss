@@ -151,15 +151,18 @@ html{
                     }
                 }
                 .popup_body{
-                    height: 76%;
-                    width: 100%;
-                    
-                    display: flex;
-                    flex-direction: row;
                     
 
 
-                    .choices{
+
+                    .foorm{
+                        height: 76%;
+                        width: 100%;
+                        
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .choices{
                         width: 80%;
                         height: 100%;
                         
@@ -235,6 +238,12 @@ html{
 
 
                     }
+
+                    }
+                    
+
+
+                    
 
                 }
                 .popup_footer{
